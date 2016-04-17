@@ -3,6 +3,7 @@ OpenInsight 9.x version upgrades often involve uninstalling and re-installing th
 
 #Simple Usage Example
 If you are unfamiliar with powershell please follow these steps to run the removal script.
+
 1. Download the files to the workstation which the client setup components should be removed or to a shared network folder accessible from the workstation.
 2. At the workstation right click on ‘run remove script.bat’ and choose ‘Run as administrator’. This will adjust the powershell execution policy and then execute the powershell script.
 3. Wait for the removal script to display the confirmation message.  After script completes you can double check the results by viewing the list of Programs and Features to verify any Revelation Software client components have been removed.
@@ -12,6 +13,7 @@ Note: This does not uninstall OpenInsight, only the components that were install
 #Advanced Usage Example
 If you are familiar with PowerShell and have already configured the script execution policy to allow signed or all scripts to run you can simply run Remove-RevClientSetup.ps1 without the use of the bat script.
 
-To silently uninstall without prompting for confirmation run
+To silently uninstall without prompting for confirmation run:
+
   .\Remove-RevClientSetup.ps1 1
 
