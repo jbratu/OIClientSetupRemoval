@@ -1,3 +1,2 @@
 pushd %~dp0
-powershell Set-ExecutionPolicy RemoteSigned
-powershell.exe -Command ".\Remove-RevClientSetup.ps1"
+powershell.exe -ExecutionPolicy Bypass -File Remove-RevClientSetup.ps1
